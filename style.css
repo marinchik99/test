@@ -43,6 +43,7 @@
 
 .main-column__title {
   margin-top: 40px;
+  display: block;
 }
 
 .form {
@@ -56,6 +57,7 @@
   width: 245px;
   margin-bottom: 8px;
   text-overflow: ellipsis;
+  display: block;
 }
 
 .title {
@@ -210,6 +212,31 @@
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 15px;
+}
+
+.message {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  margin: 216px 0 0 44px;
+}
+
+.message h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  margin: 0;
+  padding-bottom: 8px;
+}
+
+.message p {
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 3px;
 }
 
 @media (max-width: 615px) {
