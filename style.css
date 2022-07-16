@@ -98,12 +98,18 @@
   text-overflow: ellipsis;
 }
 
-.form-control:focus {
+.form-control:focus,
+.form-select:focus,
+.form-control.is-valid:focus {
   color: #212529;
   background-color: #fff;
   border-color: none;
   outline: 0;
   box-shadow: none;
+}
+
+.invalid-feedback {
+  margin: 0;
 }
 
 .form-select {

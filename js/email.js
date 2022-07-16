@@ -1,4 +1,4 @@
-let emailPattern = /\S+@\S+\.\S+/;
+const emailPattern = /\S+@\S+\.\S+/;
 const email = document.querySelector(".form-control.email");
 
 function checkValidEmail(e) {

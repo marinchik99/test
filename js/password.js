@@ -1,6 +1,6 @@
-let password =  document.querySelector(".form-control.password");
-let confirmPassword = document.querySelector(".form-control.confirm");
-let pattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/;
+const password =  document.querySelector(".form-control.password");
+const confirmPassword = document.querySelector(".form-control.confirm");
+const pattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/;
 
 function checkValidPassword(e) {
   if (pattern.test(e.target.value)) {

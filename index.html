@@ -27,11 +27,17 @@
         <form class="row g-2 form">
           <div class="col-md-6 form__component">
             <label for="validationDefault01" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="validationDefault01" value="Alice" required>
+            <input type="text" class="form-control first-name" id="validationDefault01" value="Alice" required>
+            <div id="validationServer01" class="invalid-feedback" style="font-size: 12px ;">
+              Must be capitalize, length min 3
+            </div>
           </div>
           <div class="col-md-6 form__component">
             <label for="validationDefault02" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="validationDefault02" value="Miller" required>
+            <input type="text" class="form-control last-name" id="validationDefault02" value="Miller" required>
+            <div id="validationServer02" class="invalid-feedback" style="font-size: 12px ;">
+              Must be capitalize, length min 3
+            </div>
           </div>
           <div class="col-md-6 form__component">
             <label for="validationDefault03" class="form-label">Nationality</label>
@@ -46,7 +52,7 @@
             <label for="validationDefault04" class="form-label">E-mail</label>
             <input type="text" class="form-control email is-valid" id="validationDefault04" value="alice.miller@yahoo.com" required>
             <div id="validationServer04" class="invalid-feedback" style="font-size: 12px ;">
-              Wrong email. 
+              Example: user@mail.com
             </div>
           </div>
           <div class="col-md-6 form__component">
@@ -112,6 +118,7 @@
       </div>
     </section>
   </main>
+  <script src="./js/name.js"></script>
   <script src="./js/email.js"></script>
   <script src="./js/password.js"></script>
 </body>
