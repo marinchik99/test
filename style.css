@@ -98,6 +98,14 @@
   text-overflow: ellipsis;
 }
 
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: none;
+  outline: 0;
+  box-shadow: none;
+}
+
 .form-select {
   background-position: right;
   background-size: 10px;
