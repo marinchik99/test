@@ -55,6 +55,7 @@
   height: 42px;
   width: 245px;
   margin-bottom: 8px;
+  text-overflow: ellipsis;
 }
 
 .title {
@@ -93,6 +94,8 @@
   font-family: 'Work Sans', sans-serif;
   font-size: 14px;
   padding: 0 0 2px;
+  overflow:hidden;
+  text-overflow: ellipsis;
 }
 
 .form-select {
@@ -136,6 +139,8 @@
   font-size: 14px;
   padding: 0 3px 5px 0;
 }
+
+/*Change style of the bootstrap radio input */
 
 .form-check-input:checked[type=radio] {
   background-color: #fff;
@@ -182,6 +187,8 @@
   border-radius: 0;
 }
 
+/*Change style of the bootstrap valid input */
+
 .form-control.is-valid, .was-validated .form-control:valid {
   border-color: #979797;
   padding-right: 0;
@@ -189,4 +196,66 @@
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 15px;
+}
+
+@media (max-width: 615px) {
+  .form-container {
+    max-width: 400px;
+    height: 700px;
+  }
+  .form {
+    width: 300px;
+    margin-left: 15px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .main-column__container {
+    max-width: 300px;
+    width: 100%;
+  }
+  .main-column {
+    max-width: 400px;
+    width: 100%;
+  }
+  .main-column__title {
+    margin: 40px 0 0 15px;
+  }
+  .create-acc {
+    margin: 40px 0 0;
+  }
+}
+
+@media (max-width: 415px) {
+  .form-container {
+    max-width: 300px;
+    height: 700px;
+  }
+  .form {
+    width: 250px;
+    margin-left: 15px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .main-column__container {
+    max-width: 250px;
+    width: 100%;
+  }
+  .form__component {
+    height: 42px;
+    width: 200px;
+    margin-bottom: 8px;
+  }
+  .form-select.day {
+    width: 40px;
+  }
+  .form-select.month {
+    width: 110px;
+  }
+  .main-column {
+    max-width: 300px;
+    width: 100%;
+  }
+  .left-column__text {
+    font-size: 39px;
+  }
 }
