@@ -5,6 +5,19 @@ const month =  document.querySelector(".month");
 const year =  document.querySelector(".year");
 const gender =  document.querySelectorAll(".form-check-input");
 
+// animation for button 'complete signup', when submit is failed.
+
+document.querySelector(".create-acc__button").onclick = () => {
+  document.querySelectorAll(".form-control").forEach((item) => {
+    if (item.classList.contains('is-valid')) {
+      document.querySelector(".create-acc__button").classList.add('animate');
+    }
+    setTimeout(() => {
+      document.querySelector(".create-acc__button").classList.remove('animate');
+    }, 500);
+  });
+}
+
 form.addEventListener('submit', function(e) {
   e.preventDefault();
   let formValues = {
