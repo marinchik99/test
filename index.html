@@ -44,7 +44,10 @@
           </div>
           <div class="col-md-6 form__component">
             <label for="validationDefault04" class="form-label">E-mail</label>
-            <input type="text" class="form-control is-valid" id="validationDefault04" value="alice.miller@yahoo.com" required>
+            <input type="text" class="form-control email is-valid" id="validationDefault04" value="alice.miller@yahoo.com" required>
+            <div id="validationServer04" class="invalid-feedback" style="font-size: 12px ;">
+              Wrong email. 
+            </div>
           </div>
           <div class="col-md-6 form__component">
             <label for="validationDefault05" class="form-label">Date of Birth</label>
@@ -109,6 +112,7 @@
       </div>
     </section>
   </main>
+  <script src="./js/email.js"></script>
   <script src="./js/password.js"></script>
 </body>
 </html>

@@ -5,22 +5,26 @@ let pattern = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{8,}$/;
 function checkValidPassword(e) {
   if (pattern.test(e.target.value)) {
     document.querySelector("#validationServer09").style.display = "none";
-    document.querySelector(".form-control.password").style.borderColor = "green";
+    password.style.borderColor = "green";
+    password.classList.add("is-valid");
   }
   else {
     document.querySelector("#validationServer09").style.display = "block";
-    document.querySelector(".form-control.password").style.borderColor = "red";
+    password.style.borderColor = "red";
+    password.classList.remove("is-valid");
   }
 }
 
 function checkConfirmPassword(e) {
   if (password.value !== e.target.value) {
     document.querySelector("#validationServer10").style.display = "block";
-    document.querySelector(".form-control.confirm").style.borderColor = "red";
+    confirmPassword.style.borderColor = "red";
+    confirmPassword.classList.remove("is-valid");
   }
   else {
     document.querySelector("#validationServer10").style.display = "none";
-    document.querySelector(".form-control.confirm").style.borderColor = "green";
+    confirmPassword.style.borderColor = "green";
+    confirmPassword.classList.add("is-valid");
   }
 }
 password.addEventListener("input", (e) => {
