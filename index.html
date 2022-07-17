@@ -27,14 +27,14 @@
         <form class="row g-2 form">
           <div class="col-md-6 form__component">
             <label for="validationDefault01" class="form-label">First Name</label>
-            <input type="text" class="form-control first-name" id="validationDefault01" value="Alice" required onfocus="this.value=''">
+            <input type="text" class="form-control first-name" id="validationDefault01" placeholder="Alice" required onfocus="this.value=''">
             <div id="validationServer01" class="invalid-feedback" style="font-size: 12px ;">
               Must be capitalize, length min 3
             </div>
           </div>
           <div class="col-md-6 form__component">
             <label for="validationDefault02" class="form-label">Last Name</label>
-            <input type="text" class="form-control last-name" id="validationDefault02" value="Miller" required onfocus="this.value=''">
+            <input type="text" class="form-control last-name" id="validationDefault02" placeholder="Miller" required onfocus="this.value=''">
             <div id="validationServer02" class="invalid-feedback" style="font-size: 12px ;">
               Must be capitalize, length min 3
             </div>
@@ -50,7 +50,7 @@
           </div>
           <div class="col-md-6 form__component">
             <label for="validationDefault04" class="form-label">E-mail</label>
-            <input type="text" class="form-control email is-valid" id="validationDefault04" value="alice.miller@yahoo.com" required onfocus="this.value=''">
+            <input type="text" class="form-control email is-valid" id="validationDefault04" placeholder="alice.miller@yahoo.com" required onfocus="this.value=''">
             <div id="validationServer04" class="invalid-feedback" style="font-size: 12px ;">
               Example: user@mail.com
             </div>
@@ -59,21 +59,21 @@
             <label for="validationDefault05" class="form-label">Date of Birth</label>
             <div class="form-label date">
               <select class="form-select day" id="validationDefault05" required>
-                <option selected value="">21</option>
+                <option selected value="21">21</option>
                 <option value="3">3</option>
                 <option value="7">7</option>
                 <option value="13">13</option>
                 <option value="">...</option>
               </select>
               <select class="form-select month" id="validationDefault06" required>
-                <option selected value="">December</option>
+                <option selected value="December">December</option>
                 <option value="January">January</option>
                 <option value="May">May</option>
                 <option value="August">August</option>
                 <option>...</option>
               </select>
               <select class="form-select year" id="validationDefault07" required>
-                <option selected value="">1995</option>
+                <option selected value="1995">1995</option>
                 <option value="1999">1999</option>
                 <option value="2005">2005</option>
                 <option>...</option>
@@ -130,6 +130,7 @@
   <script src="./js/name.js"></script>
   <script src="./js/email.js"></script>
   <script src="./js/password.js"></script>
+  <script src="./js/ajax.js"></script>
   <script src="./js/submitForm.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vivus@latest/dist/vivus.min.js"></script>
   <script src="./js/animateSvg.js"></script>
